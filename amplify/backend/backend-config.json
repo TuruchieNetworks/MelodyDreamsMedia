@@ -17,19 +17,20 @@
           "defaultAuthentication": {
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 30,
+              "apiKeyExpirationDays": 365,
+              "apiKeyExpirationDate": "2023-09-29T00:15:18.884Z",
               "description": "api key description"
             }
           },
           "additionalAuthenticationProviders": [
             {
-              "authenticationType": "AWS_IAM"
-            },
-            {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
                 "userPoolId": "authmelodydreamsmediapla"
               }
+            },
+            {
+              "authenticationType": "AWS_IAM"
             }
           ]
         }
