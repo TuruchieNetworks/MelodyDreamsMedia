@@ -6,7 +6,7 @@ import {
   ProfileCollection 
 } from '../../ui-components';
 
-const CognitoUsers = (signIn, user) => {
+const CognitoUsers = ({signOut, user}) => {
   return (
     <section className='profilecontainer'>
       <div className='innerprofilecontainer'>

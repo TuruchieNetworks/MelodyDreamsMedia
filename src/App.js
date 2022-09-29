@@ -8,7 +8,7 @@ import './App.css';
 import Profiles from './components/layout/Profiles';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 
-function App(signOut, user) {
+function App({signIn, user}) {
   return (
     <Router>
     <Navbar />
